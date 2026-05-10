@@ -1,0 +1,288 @@
+body,
+html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background: #101820;
+	font-family: Arial, sans-serif;
+}
+
+.usernameInput {
+	width: 80%;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	color: whitesmoke;
+	padding: 15px;
+	background: center;
+
+	font-size: 20px;
+	text-align: center;
+	border-radius: 6px;
+	border: 1px solid #555;
+
+}
+
+.pinpadContainer {
+	text-align: center;
+	padding-top: 40px;
+	color: white;
+}
+
+.headerBlock {
+	margin-bottom: 40px;
+}
+
+
+.pinChangeTitle {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.pinInput {
+	width: 80%;
+	padding: 15px;
+	background: center;
+	margin-bottom: 10px;
+	font-size: 20px;
+	text-align: center;
+	border-radius: 6px;
+	color: white;
+	border: 1px solid #555;
+}
+
+.clock {
+	font-size: 50px;
+	font-weight: bold;
+}
+
+.title {
+	margin-top: 10px;
+	font-size: 22px;
+	font-weight: bold;
+	opacity: 0.9;
+}
+
+.date {
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 4px;
+}
+
+.box {
+	position: relative;
+	background: #2E3338;
+	width: 85%;
+	max-width: 520px;
+	margin: 0 auto;
+	padding: 40px;
+	border-radius: 6px;
+}
+
+
+.pinDisplay {
+	width: 60%;
+	margin: 0 auto 30px;
+	color: white;
+	border: 1px solid #555;
+	padding: 10px;
+	height: 30px;
+	font-size: 20px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.pinDisplay.placeholder {
+	color: #888;
+	font-size: 16px;
+	font-style: italic;
+}
+
+.numGrid {
+	width: 60%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 28px;
+	margin-bottom: 40px;
+}
+
+.numBtn {
+	background: none;
+	border: none;
+	color: white;
+	font-size: 32px;
+	cursor: pointer;
+}
+
+.emptyBtn {
+	background: none;
+	border: none;
+	cursor: auto;
+
+}
+
+.bottomButtons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 40px;
+	margin-top: 25px;
+	flex-wrap: wrap;
+}
+
+.confirm,
+.backBtn {
+	width: 100%;
+	max-width: 240px;
+	padding: 15px 0px;
+	font-size: 18px;
+	border-radius: 8px;
+	border: none;
+	color: white;
+	cursor: pointer;
+
+	text-align: center;
+	transition: background 0.2s ease, transform 0.15s ease;
+}
+
+
+.green {
+	background: #33A64C;
+}
+
+.gray {
+	background: #6C767D;
+}
+
+.orange {
+	background: rgb(255, 179, 36);
+}
+
+.red {
+	background: rgb(213, 0, 0);
+}
+
+.blue {
+	background: royalblue;
+}
+
+.green:hover {
+	background: #2d8f42;
+	transform: scale(1.03);
+}
+
+.gray:hover {
+	background: #5d656c;
+	transform: scale(1.03);
+}
+
+.terminalMessage {
+	position: absolute;
+	top: -30px;
+	height: 35px;
+	left: 50%;
+	padding: 12px 20px;
+	border-radius: 8px;
+	text-align: center;
+	font-size: 1rem;
+	transition: opacity 0.5s ease, transform 0.5s ease;
+	z-index: 1000;
+}
+
+/* Show class makes it visible */
+.terminalMessage.show {
+	opacity: 1;
+	transform: translateX(-50%) translateY(0);
+}
+
+/* Message types */
+.terminalMessage.success {
+	width: max-content;
+	background-color: #1e924f;
+	color: #fefefe;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	font-size: medium;
+}
+
+.terminalMessage.info {
+	background-color: #e0f0ff;
+	color: #1a73e8;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.terminalMessage.error {
+	font-family: Arial, Helvetica, sans-serif;
+	color: rgb(242 46 46);
+	font-size: 20px;
+	margin-bottom: 10px;
+	font-weight: bold;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.box .error {
+	font-family: arial;
+	color: rgb(242 46 46);
+	font-size: 20px;
+	margin-bottom: 10px;
+	font-weight: bold;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 550px) {
+
+	.clock {
+		font-size: 30px;
+	}
+
+	.title {
+		font-size: 16px;
+	}
+
+	.date {
+		font-size: 13px;
+	}
+
+	.box {
+		width: 70%;
+		padding: 20px;
+	}
+
+	.pinDisplay {
+		width: 60%;
+		font-size: 14px;
+		height: 25px;
+		padding: 1px;
+	}
+
+	.pinDisplay.placeholder {
+		font-size: 12px;
+	}
+
+	.numGrid {
+		width: 90%;
+		gap: 18px;
+	}
+
+	.numBtn {
+		font-size: 24px;
+	}
+
+	.bottomButtons {
+		flex-direction: column;
+		gap: 14px;
+	}
+
+	.confirm,
+	.backBtn {
+		height: 34px;
+		max-width: 60%;
+		font-size: 14px;
+		padding: 6px 0;
+		border-radius: 6px;
+		font-weight: normal;
+	}
+}

@@ -1,0 +1,116 @@
+body,
+html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background: #101820;
+	font-family: Arial, sans-serif;
+}
+
+.successContainer {
+	text-align: center;
+	padding-top: 40px;
+	color: white;
+}
+
+.headerBlock {
+	margin-bottom: 40px;
+}
+
+.clock {
+	font-size: 50px;
+	font-weight: bold;
+}
+
+.title span {
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	font-size: 20px;
+	color: white;
+}
+
+
+.date {
+	font-size: 20px;
+	margin-top: 4px;
+}
+
+
+.terminalMessage {
+	position: fixed;
+	top: 24px;
+	left: 50%;
+	transform: translateX(-50%);
+	min-width: 320px;
+	max-width: 80%;
+	padding: 14px 24px;
+	border-radius: 10px;
+	font-size: 1.1rem;
+	font-weight: 500;
+	text-align: center;
+	z-index: 9999;
+
+	opacity: 0;
+	transition: opacity 0.6s ease, transform 0.6s ease;
+	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.terminalMessage.show {
+	opacity: 1;
+	transform: translateX(-50%) translateY(0);
+}
+
+.terminalMessage.hide {
+	opacity: 0;
+	transform: translateX(-50%) translateY(-10px);
+}
+
+
+.terminalMessage.success {
+	background: linear-gradient(135deg, #d4f8e8, #b9f2d2);
+	color: #1e7f4f;
+}
+
+.terminalMessage.info {
+	background: linear-gradient(135deg, #e6f0ff, #cfdfff);
+	color: #204a87;
+}
+
+.terminalMessage.error {
+	background: linear-gradient(135deg, #ffe3e3, #ffc9c9);
+	color: #8a1c1c;
+}
+
+
+/* temporary commented out
+.greenText {
+	color: #33A64C;
+	font-size: 18px;
+	
+	text-align: center;
+	line-height: 1.4;
+}
+
+.redText {
+	color: #DB2843;
+	font-size: 18px;
+	text-align: center;
+	line-height: 1.4;
+}
+
+.orangeText {
+	color: #f38b1f;
+	font-size: 18px;
+	text-align: center;
+	line-height: 1.4;
+}
+
+.grayText {
+	color: #6C767D;
+	font-size: 18px;
+	
+	text-align: center;
+	line-height: 1.4;
+}
+*/

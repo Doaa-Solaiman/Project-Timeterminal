@@ -1,0 +1,102 @@
+.historyModalOverlay {
+	position: fixed;
+	inset: 0;
+	background: rgba(0, 0, 0, 0.55);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	z-index: 1000;
+}
+
+.historyModalBox {
+	width: 480px;
+	max-height: 75vh;
+	background: #2f343a;
+	border-radius: 14px;
+	padding: 20px;
+
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+	color: #f2f2f2;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.historyHeader {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 16px;
+}
+
+.historyHeader h2 {
+	margin: 0;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+
+.historyCloseBtn {
+	background: transparent;
+	border: none;
+	color: #aaa;
+	font-size: 22px;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.historyCloseBtn:hover {
+	color: #fff;
+}
+
+.historyContent {
+	overflow-y: auto;
+	padding-right: 4px;
+}
+
+
+.historyCard {
+	background: #3b4148;
+	border-radius: 10px;
+	padding: 14px 16px;
+	margin-bottom: 14px;
+
+	border-left: 4px solid #f5d78a;
+
+	font-size: 15px;
+	line-height: 1.5;
+}
+
+.historyCard:last-child {
+	margin-bottom: 0;
+}
+
+
+.historyCard div {
+	margin-bottom: 6px;
+}
+
+
+.historyCard span {
+	font-weight: 600;
+	color: #d5dce1;
+	margin-right: 6px;
+}
+
+
+.historyEmpty {
+	font-size: 15px;
+	opacity: 0.8;
+}
+
+
+.historyContent::-webkit-scrollbar {
+	width: 6px;
+}
+
+.historyContent::-webkit-scrollbar-thumb {
+	background: #555;
+	border-radius: 4px;
+}
