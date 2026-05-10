@@ -2,3 +2,12 @@
 /**/node_modules/
 /**/package-lock.json
 /**/target/
+.classpath
+.project
+.settings/
+target/
+node_modules/
+logs/
+bin/
+*.class
+dependency-reduced-pom.xml
