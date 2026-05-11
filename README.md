@@ -19,7 +19,9 @@ The system also validates all terminal actions to prevent incorrect operations s
 The prototype uses username and PIN authentication as the identification method. Future expansion is planned to support RFID technology, although physical RFID devices were not included in this project.
 
 The long-term goal is to create a maintainable and scalable system that can also support automatic monthly reporting in the future.
+
 ---
+
 ## Main Features
 
 * Employee authentication using username and PIN
@@ -34,6 +36,7 @@ The long-term goal is to create a maintainable and scalable system that can also
 * Future-ready structure for RFID expansion
 
 ---
+
 ## Technologies Used
 
 * Java (Backend & Business Logic)
@@ -79,6 +82,3 @@ The system prioritizes data accuracy, validation, and usability to improve the c
 
 ---
 
-## Screenshots
-
-Project screenshots will be added soon.
